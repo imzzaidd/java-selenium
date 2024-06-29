@@ -15,13 +15,11 @@ public class LoginPageTest {
 
     @BeforeClass
     public void setup() throws MalformedURLException {
-        // Create WebDriver instance using BrowserFactory for Selenium Grid
         driver = BrowserFactory.createInstance("chrome");
     }
 
     @Test
     public void loginTest() {
-        // Navigate to login page
         driver.get("https://www.saucedemo.com/");
         LoginPage loginPage = new LoginPage(driver);
 
@@ -33,7 +31,6 @@ public class LoginPageTest {
 
     @AfterClass
     public void teardown() {
-        // Close the WebDriver instance
         if (driver != null) {
             driver.quit();
         }

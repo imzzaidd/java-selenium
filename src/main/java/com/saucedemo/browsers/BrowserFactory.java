@@ -11,16 +11,9 @@ public class BrowserFactory {
 
     public static WebDriver createInstance(String browserName) throws MalformedURLException {
         WebDriver driver;
-
-        // Configure Chrome options
         ChromeOptions options = new ChromeOptions();
-
-        // Set other browser options as needed
-
-        // Set remote WebDriver URL
+        //Selenium Grid
         URL gridUrl = new URL("http://selenium-hub:4444/wd/hub");
-        
-        // Create driver instance
         driver = new RemoteWebDriver(gridUrl, options);
         
         return driver;
