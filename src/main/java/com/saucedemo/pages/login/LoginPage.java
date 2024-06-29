@@ -6,17 +6,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    
+
     @SuppressWarnings("unused")
     private WebDriver driver;
 
-    @FindBy(id = "username")
+    @FindBy(xpath = "//input[contains(@placeholder,'Username')]")
     private WebElement usernameInput;
 
-    @FindBy(id = "password")
+    @FindBy(xpath = "//input[contains(@placeholder,'Password')]")
     private WebElement passwordInput;
 
-    @FindBy(id = "login-button")
+    @FindBy(xpath = "//input[contains(@type,'submit')]")
     private WebElement loginButton;
 
     // Constructor
@@ -25,7 +25,7 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    // Methods to interact with elements
+    // Metodos
     public void setUsername(String username) {
         usernameInput.sendKeys(username);
     }
@@ -38,3 +38,4 @@ public class LoginPage {
         loginButton.click();
     }
 }
+

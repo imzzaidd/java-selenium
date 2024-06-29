@@ -22,19 +22,13 @@ public class LoginPageTest {
     @Test
     public void loginTest() {
         // Navigate to login page
-        driver.get("https://example.com/login");
-
-        // Initialize LoginPage
+        driver.get("https://www.saucedemo.com/");
         LoginPage loginPage = new LoginPage(driver);
 
-        // Perform login
-        loginPage.setUsername("your_username");
-        loginPage.setPassword("your_password");
+        loginPage.setUsername("standard_user");
+        loginPage.setPassword("secret_sauce");
         loginPage.clickLoginButton();
 
-        // Add assertions or validation as needed
-        // Example:
-        // Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
     }
 
     @AfterClass
