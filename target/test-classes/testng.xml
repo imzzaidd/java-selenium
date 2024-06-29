@@ -3,8 +3,6 @@
     <test name="Login Tests">
         <classes>
             <class name="com.saucedemo.tests.LoginPageTest"/>
-            <!-- Agrega más clases de prueba aquí si es necesario -->
         </classes>
     </test>
-    <!-- Puedes definir más tests o suites según sea necesario -->
 </suite>
