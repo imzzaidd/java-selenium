@@ -1,5 +1,5 @@
-# Usa una imagen base con Maven y Java 17
-FROM maven:3.8.4-openjdk-17-slim
+# Usa una imagen base con Maven y Java 11
+FROM maven:3.8.4-openjdk-11-slim
 
 # Establece el directorio de trabajo en /usr/src/app
 WORKDIR /usr/src/app
